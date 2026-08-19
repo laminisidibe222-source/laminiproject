@@ -1,0 +1,234 @@
+header{
+
+    background-color: aliceblue;
+    padding: 80px auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+     img{
+        width: 80px;
+        height: 80px;
+        right: 0;
+     }
+     h1{
+        color: orange;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+}
+
+
+.contain{
+
+    display: flex;
+    gap:500px;
+    justify-content: center;
+    padding: 35px;
+    height: 500px;
+    align-items: center;
+    background-color: indigo;
+
+    .part1{
+        text-align: justify;
+        h2{
+            color: orange;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 5rem;
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    img{
+        width: 250px;
+        height: 250px;
+    }
+}
+.part2{
+        display: flex;
+        justify-content: space-evenly;
+        height: 500px;
+        align-items: center;
+
+        .icc{
+            background-color: white;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+            transition: transform 2s;
+
+            img{
+                width: 200px;
+                height: 200px;
+            }
+
+            img:hover{
+                transform: scale(1.5);
+            }
+        }
+
+
+        .icc1{
+
+            img{
+                width: 150px;
+                height: 150px;
+                padding-left: 200px;
+            }
+            h2{
+                color: indigo;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 30px;
+            }
+            p{
+                color:orange;
+                font-size: 25px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+
+    .Car{
+       background-color: indigo;
+       height: 300px;
+       padding: 35px;
+       text-align: center;
+
+       h1{
+        color: orange;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+        .carouss{
+        margin: 50px auto;
+        display: flex;
+        gap: 2rem;
+        overflow-x: auto;
+        width: 700px;
+        img{
+            width: 150px;
+            height: 150px;
+            flex: 1px;
+        }
+    }
+
+    .carouss::-webkit-scrollbar{
+        display: none;
+    }
+
+    }
+    
+    footer{
+
+        background-color: rgb(139, 72, 202);
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .ft2{
+            h2{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: orange;
+            }
+            .fft{
+                padding: 5px;
+                background-color: orange;
+            }
+        }
+
+        .ft3{
+            position: relative;
+            h2{
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               color: white; 
+            }
+
+            .fft3{
+                position: absolute;
+                left: 20px;
+                display: flex;
+                gap: 2rem;
+                a{                                
+                color: orange;
+                left: 100px;
+                }
+
+            }
+        }
+    }
+
+    .tra{
+        position: relative;
+        background-color: white;
+        height: 500px;
+        a{
+            top: 100px;
+            position: absolute;
+            padding: 100px;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 2s;
+            
+
+        }
+    }
+    a:hover{
+        background-color: indigo;
+        color: orange;
+    }
+
+
+    @media(max-width:500px){
+
+        header{
+            width: 100vh;   
+        }
+
+        section{
+
+
+            .contain,.part2,.Car,.tra{
+                width: 92vh;
+            }
+            .contain{
+                border: 2px solid black;
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                .part1{
+                    h2{
+                        font-size: 20px;
+
+                    }
+                    p{
+                       font-size: 12px;
+                       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    }
+                }
+            }
+
+            .part2{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            .tra{
+                position: relative;
+                a{
+                    position: absolute;
+                    left: 30%;
+                }
+            }
+        }
+
+        footer{
+            width: 100vh;
+        }
+    }
