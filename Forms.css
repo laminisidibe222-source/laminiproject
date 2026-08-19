@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 section{
     display: flex;
     justify-content: center;
@@ -36,4 +37,44 @@ section{
             color: white;
         }
     }
+=======
+section{
+    display: flex;
+    justify-content: center;
+    .part1{
+        background-image: url(pic6.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 650px;
+        height: 650px;
+        border-radius: 15px;
+    }
+
+
+    .part2{
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 50px;
+        align-content: center;
+        h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            color: blueviolet;
+        }
+        input{
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 200px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: blueviolet;
+            color: white;
+        }
+    }
+>>>>>>> 133133771c066af6999fdaa2be4582a63dbfb1ea
 }
